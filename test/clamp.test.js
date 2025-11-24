@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import clamp from "../util_lib/COMP.SE.200-2024-2025-1/src/clamp.js";
+import clamp from "../util_lib/src/clamp.js";
 
 describe("clamp()", () => {
   it("returns number if already in range", () => {
