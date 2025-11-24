@@ -1,0 +1,32 @@
+{
+  "name": "library_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "c8 mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "chai": "^6.2.1",
+    "mocha": "^11.7.5"
+  },
+  "c8": {
+  "exclude": [
+    "util_lib/COMP.SE.200-2024-2025-1/src/.internal/**",
+    "test/**"
+  ],
+  "reporter": [
+    "lcov",
+    "text"
+  ]
+  }
+}
